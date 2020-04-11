@@ -21,6 +21,8 @@ should work.
 cd /path/to/your/project
 git clone https://github.com/KWARC/LaTeX-proposal
 echo 'export TEXINPUTS = "$(TEXINPUTS):/path/to/your/project/LaTeX-proposal//:"' >> ~/.bashrc
+for Linux such as Ubuntu, the last command should be:
+echo 'export TEXINPUTS="/path/to/your/project/LaTeX-proposal/:$TEXINPUTS"' >> ~/.bashrc
 ```
 Of course you will have to replace `/path/to/your/project` with a path appropriate to
 your system. A simple `git pull` will update you to the newest version.
